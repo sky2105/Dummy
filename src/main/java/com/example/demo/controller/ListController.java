@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -26,11 +27,14 @@ public class ListController {
 		list1.add("ACCOUNT ACTIVATION");
 		list2.add("ABC");
 		list2.add("DEF");
-		
+		System.out.println(type1.toString());
 		if(type1.equalsIgnoreCase("ASSET PRODUCT"))
 		{
+			System.out.print(list1);
 			return list1;
 		}else if (type1.equalsIgnoreCase("BRANCH BANKING PROCESS")) {
+			System.out.print(list2);
+
 			return  list2;
 		}
 		return null;

@@ -19,14 +19,19 @@ public class ListController {
 	}
 	
 	@PostMapping("/getList")
-	public List  getList(@RequestParam String type1) {
+	public List  getList(@RequestBody
+			String type1) {
 		System.out.println("inside getList");
 		List list1 = new ArrayList<>();
 		List list2 = new ArrayList<>();
 		list1.add("AADHAR CAMP REQUEST");
 		list1.add("ACCOUNT ACTIVATION");
+		list1.add("HFC-IT APPLICATION");
+		list1.add("I-CARE")
 		list2.add("ABC");
 		list2.add("DEF");
+		list2.add("XYZ");
+		
 		System.out.println(type1.toString());
 		if(type1.equalsIgnoreCase("ASSET PRODUCT"))
 		{

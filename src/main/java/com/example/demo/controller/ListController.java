@@ -27,7 +27,7 @@ public class ListController {
 		list1.add("AADHAR CAMP REQUEST");
 		list1.add("ACCOUNT ACTIVATION");
 		list1.add("HFC-IT APPLICATION");
-		list1.add("I-CARE")
+		list1.add("I-CARE");
 		list2.add("ABC");
 		list2.add("DEF");
 		list2.add("XYZ");

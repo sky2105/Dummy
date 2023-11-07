@@ -19,7 +19,7 @@ public class ListController {
 	}
 	
 	@PostMapping("/getList")
-	public List  getList(@RequestBody
+	public List  getList(@RequestParam
 			String type1) {
 		System.out.println("inside getList");
 		List list1 = new ArrayList<>();

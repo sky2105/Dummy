@@ -37,7 +37,7 @@ public class ListController {
 			
 			
 		}else if (type1.equalsIgnoreCase("BRANCH BANKING PROCESS")) {
-			list1.add("AADHAR CAMP REQUEST");
+			list1.add("AADHAAR CAMP REQUEST");
 			list1.add("ACCOUNT ACTIVATION");
 			list1.add("ADHERENCE SCORE");
 			list1.add("AMXE TREVELLERS CHEQUE");
@@ -72,7 +72,7 @@ public class ListController {
 			System.out.print(list1);
 			
 			
-		}else if (type2.equalsIgnoreCase("AADHAR CAMP REQUESTS")) {
+		}else if (type2.equalsIgnoreCase("AADHAAR CAMP REQUEST")) {
 			list1.add("CAMP APPROVAL REQUEST");
 			
 			System.out.print(list1);

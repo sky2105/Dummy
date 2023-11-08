@@ -24,26 +24,65 @@ public class ListController {
 			String type1) {
 		System.out.println("inside getList");
 		List list1 = new ArrayList<>();
-		List list2 = new ArrayList<>();
 		
-		list1.add("AADHAR CAMP REQUEST");
-		list1.add("ACCOUNT ACTIVATION");
-		list1.add("HFC-IT APPLICATION");
-		list1.add("I-CARE");
-		list2.add("ABC");
-		list2.add("DEF");
-		list2.add("XYZ");
+		
 		
 		System.out.println(type1.toString());
 		if(type1.equalsIgnoreCase("ASSET PRODUCT"))
 		{
+			list1.add("MORTGAGE");
+			list1.add("RIBG PRODUCTS");
+		
 			System.out.print(list1);
-			return list1;
+			
+			
 		}else if (type1.equalsIgnoreCase("BRANCH BANKING PROCESS")) {
-			System.out.print(list2);
-
-			return  list2;
+			list1.add("AADHAR CAMP REQUEST");
+			list1.add("ACCOUNT ACTIVATION");
+			list1.add("ADHERENCE SCORE");
+			list1.add("AMXE TREVELLERS CHEQUE");
+			list1.add("ANTI MONEY LAUNDERING QUERY");
+			System.out.print(list1);
+			
+		}else if(type1.equalsIgnoreCase("HFC-IT APPLICATION CALLS")) {
+			list1.add("HFC CKYC");
+			list1.add("HFC LEGAL WORKFLOW");
+			list1.add("HFC MOBILITY");
+			list1.add("HFC TREASURY");
+			System.out.println("list1");
+			
 		}
-		return null;
+		return list1;
+	}
+	@PostMapping("/getList/{type2}")
+	public List  getList2(@PathVariable
+			String type2) {
+		System.out.println("inside getList");
+		List list1 = new ArrayList<>();
+		
+		
+		
+		System.out.println(type2.toString());
+		if(type2.equalsIgnoreCase("MORTGAGE"))
+		{
+			list1.add("BALANCE SCORECARD");
+			list1.add("BRANCH SEGMENT OR EMPLOYMENT RECONCILLATION");
+			list1.add("CHANNEL MAPPING UPDATION");
+		
+			System.out.print(list1);
+			
+			
+		}else if (type2.equalsIgnoreCase("AADHAR CAMP REQUESTS")) {
+			list1.add("CAMP APPROVAL REQUEST");
+			
+			System.out.print(list1);
+			
+		}else if(type2.equalsIgnoreCase("HFC CKYC")) {
+			list1.add("APPLICATION SLOW OR DOWN-HFC CKYC");
+			list1.add("REPORT AN ISSUE HFC CKYC");
+			System.out.println("list1");
+			
+		}
+		return list1;
 	}
 }

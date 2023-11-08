@@ -5,6 +5,7 @@ import java.util.List;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,12 +19,13 @@ public class ListController {
 		return "Welcome Akash";
 	}
 	
-	@PostMapping("/getList")
-	public List  getList(@RequestParam
+	@PostMapping("/getList/{type1}")
+	public List  getList(@PathVariable
 			String type1) {
 		System.out.println("inside getList");
 		List list1 = new ArrayList<>();
 		List list2 = new ArrayList<>();
+		
 		list1.add("AADHAR CAMP REQUEST");
 		list1.add("ACCOUNT ACTIVATION");
 		list1.add("HFC-IT APPLICATION");

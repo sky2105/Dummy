@@ -54,7 +54,7 @@ public class ListController {
 		}
 		return list1;
 	}
-	@PostMapping("/getList/{type2}")
+	@PostMapping("/getList2/{type2}")
 	public List  getList2(@PathVariable
 			String type2) {
 		System.out.println("inside getList");
